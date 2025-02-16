@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install:frontend": "cd frontend && npm install",
-    "build:frontend": "cd frontend && npm run build",
-    "start:frontend": "cd frontend && npm run dev",
-    "vercel-build": "npm run install:frontend && npm run build:frontend"
+    "vercel-install": "cd frontend && npm install",
+    "vercel-build": "cd frontend && npm run build"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
