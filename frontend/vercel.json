@@ -5,7 +5,8 @@
       "destination": "/index.html"
     }
   ],
-  "buildCommand": "npm install && npm run build",
+  "installCommand": "npm install",
+  "buildCommand": "npx tsc && npx vite build",
   "outputDirectory": "dist",
   "framework": "vite"
 }
