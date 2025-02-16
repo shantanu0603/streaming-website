@@ -1,0 +1,17 @@
+{
+  "name": "video-streaming-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "concurrently \"cd frontend && npm install\" \"cd backend && npm install\"",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && node --loader ts-node/esm server.ts",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "build": "npm run build:frontend && npm run build:backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 

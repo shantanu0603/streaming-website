@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: video-streaming-backend
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: NODE_ENV
+        value: production
+      - key: FRONTEND_URL
+        sync: false # This will be set in Render dashboard 
