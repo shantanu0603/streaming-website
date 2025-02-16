@@ -4,9 +4,5 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "installCommand": "npm install",
-  "buildCommand": "npx tsc && npx vite build",
-  "outputDirectory": "dist",
-  "framework": "vite"
+  ]
 }
